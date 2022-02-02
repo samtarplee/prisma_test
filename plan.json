@@ -1,0 +1,29 @@
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [32m+[0m create
+[0m
+Terraform will perform the following actions:
+
+[1m  # aws_cloudtrail.success[0m will be created[0m[0m
+[0m  [32m+[0m[0m resource "aws_cloudtrail" "success" {
+      [32m+[0m [0m[1m[0marn[0m[0m                           = (known after apply)
+      [32m+[0m [0m[1m[0menable_log_file_validation[0m[0m    = true
+      [32m+[0m [0m[1m[0menable_logging[0m[0m                = true
+      [32m+[0m [0m[1m[0mhome_region[0m[0m                   = (known after apply)
+      [32m+[0m [0m[1m[0mid[0m[0m                            = (known after apply)
+      [32m+[0m [0m[1m[0minclude_global_service_events[0m[0m = true
+      [32m+[0m [0m[1m[0mis_multi_region_trail[0m[0m         = false
+      [32m+[0m [0m[1m[0mis_organization_trail[0m[0m         = false
+      [32m+[0m [0m[1m[0mname[0m[0m                          = "test"
+      [32m+[0m [0m[1m[0ms3_bucket_name[0m[0m                = "test_bucket"
+      [32m+[0m [0m[1m[0mtags_all[0m[0m                      = (known after apply)
+
+      [32m+[0m [0mevent_selector {
+          [32m+[0m [0m[1m[0minclude_management_events[0m[0m = true
+          [32m+[0m [0m[1m[0mread_write_type[0m[0m           = "All"
+        }
+    }
+
+[0m[1mPlan:[0m 1 to add, 0 to change, 0 to destroy.
+[0m
